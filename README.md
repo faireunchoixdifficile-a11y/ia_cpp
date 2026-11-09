@@ -85,19 +85,41 @@ correcte), puis boucle d'erreurs avec réinjection des extraits.
 1. Avoir ollama d'installer et de lancer
 2. Avoir les modèles gemma4:e2b, qwen2.5-coder:7b, nomic-embed-text
 
-## Installation
+## ⚙️ Installation
 
-1. Dézipper dans le répertoire de développement
-2. Ouvrir quatre invite de commande, dans chacune d'elle (individuellement, une commande = une invite de commande), tapez les commande :
-    - ollama pull qwen2.5-coder:7b
-    - ollama pull gemma4:e2b
-    - ollama pull nomic-embed-text
-    
-On va vérifier Ollama et la présence des 3 modèles :
-    
-    - python main.py --check
+1. **Dézippez** l'archive dans votre répertoire de développement.
+2. **Ouvrez une invite de commande** (Terminal) et téléchargez les 3 modèles requis en exécutant les commandes suivantes :
 
-Puis sur la même commande : Cela va indexe les 5 packs de savoirs C++ :
+```bash
+ollama pull qwen2.5-coder:7b
+```
+```bash
+ollama pull gemma4:e2b
+```
+```bash
+ollama pull nomic-embed-text
+```
 
-4. python main.py --index 
-5. python main.py ou lancer.bat
+## 🔍 Vérification et Indexation
+
+1. **Vérifiez** le bon fonctionnement d'Ollama et la présence des 3 modèles :
+   ```bash
+   python main.py --check
+   ```
+
+2. **Indexez** les 5 packs de connaissances C++ (à exécuter dans la même invite de commande) :
+   ```bash
+   python main.py --index
+   ```
+
+## 🚀 Lancement de l'application
+
+Pour démarrer le projet, vous pouvez exécuter le script Python ou utiliser le fichier de commandes fourni :
+
+```bash
+python main.py
+```
+*Ou double-cliquez simplement sur :*
+```cmd
+lancer.bat
+```
