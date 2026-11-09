@@ -88,7 +88,12 @@ correcte), puis boucle d'erreurs avec réinjection des extraits.
 ## Installation
 
 1. Dézipper dans le répertoire de développement
-2. ollama pull qwen2.5-coder:7b (+ gemma4:e2b, nomic-embed-text)
-3. python main.py --check → vérifie Ollama et la présence des 3 modèles
+2. Ouvrir quatre invite de commande, dans chacune d'elle (individuellement, une commande = une invite de commande), tapez les commande :
+    a. ollama pull qwen2.5-coder:7b
+    b. ollama pull gemma4:e2b
+    c. ollama pull nomic-embed-text
+On va vérifier Ollama et la présence des 3 modèles
+    d. python main.py --check 
+puis :    
 4. python main.py --index → indexe les 5 packs de savoirs C++
 5. python main.py ou lancer.bat
