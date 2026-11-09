@@ -78,3 +78,17 @@ correcte), puis boucle d'erreurs avec réinjection des extraits.
    présentation du diff.
 3. Compilation intégrée optionnelle (détection g++/MSVC).
 4. Export/import du contexte projet.
+
+# Démarrage
+
+## Prérequis
+1. Avoir ollama d'installer et de lancer
+2. Avoir les modèles gemma4:e2b, qwen2.5-coder:7b, nomic-embed-text
+
+## Installation
+
+1. Dézipper dans le répertoire de développement
+2. ollama pull qwen2.5-coder:7b (+ gemma4:e2b, nomic-embed-text)
+3. python main.py --check → vérifie Ollama et la présence des 3 modèles
+4. python main.py --index → indexe les 5 packs de savoirs C++
+5. python main.py ou lancer.bat
