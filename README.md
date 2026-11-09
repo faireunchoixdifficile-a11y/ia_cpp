@@ -93,8 +93,11 @@ correcte), puis boucle d'erreurs avec réinjection des extraits.
     - ollama pull gemma4:e2b
     - ollama pull nomic-embed-text
     
-On va vérifier Ollama et la présence des 3 modèles
-- python main.py --check
-puis sur la même commande :    
-4. python main.py --index → indexe les 5 packs de savoirs C++
+On va vérifier Ollama et la présence des 3 modèles :
+    
+    - python main.py --check
+
+Puis sur la même commande : Cela va indexe les 5 packs de savoirs C++ :
+
+4. python main.py --index 
 5. python main.py ou lancer.bat
